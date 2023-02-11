@@ -45,3 +45,11 @@ h3{
   display: grid;
   grid-template-columns: auto auto auto;
 }
+
+.toggles{
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  margin-bottom: 10px;
+  width: 300px;
+}

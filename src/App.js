@@ -1,6 +1,8 @@
 import { useState } from 'react'
 import './App.css';
 import MoleContainer from './MoleContainer';
+import Reset from './Reset';
+import Pause from './Pause';
 
 function App() {
   let [score, setScore] = useState(0)
@@ -28,6 +30,12 @@ function App() {
   return (
     <div className="App">
       <h1>React-A-Mole!</h1>
+      <div className='toggles'>
+        <Reset setScore = {setScore}
+        setMissed = {setMissed}/>
+        <Pause />
+      </div>
+      
         <div>
           <div className = 'scores'>
             <div>
